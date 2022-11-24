@@ -21,5 +21,11 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+<<<<<<< HEAD
 Route::get('/mail', [MailController::class, 'sendMail']);
 
+=======
+Route::get('/dashboard',function(){
+    return view('pages.home');
+});
+>>>>>>> 97d3ee50bed378803ab98ae2a8dec84b5d7982b3
