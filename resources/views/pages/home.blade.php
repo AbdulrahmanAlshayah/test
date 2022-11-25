@@ -24,125 +24,30 @@
             <thead>
                 <tr>
                     <th scope="col">#</th>
-                    <th scope="col">عنوان</th>
-                    <th scope="col">عنوان</th>
-                    <th scope="col">عنوان</th>
-                    <th scope="col">عنوان</th>
+                    <th scope="col">اسم الوافد</th>
+                    <th scope="col">رقم جواز السفر</th>
+                    <th scope="col">تاريخ الإصدار</th>
+                    <th scope="col">تاريخ انتهاء الصلاحية</th>
+                    <th scope="col">رمز التحقق المرئي</th>
                 </tr>
             </thead>
             <tbody>
+                @foreach($passports as $passport)
                 <tr>
-                    <td>1,001</td>
-                    <td>بيانات</td>
-                    <td>عشوائية</td>
-                    <td>تثري</td>
-                    <td>الجدول</td>
+                    <td>{{$passport->user->name}} </td>
+                    <td>{{$passport->name}}</td>
+                    <td>{{$passport->number}}</td>
+                    <td>{{$passport->release}}</td>
+                    <td>{{$passport->expiration}}</td>
+                    <td>{{$passport->cerification_code}}</td>
+                    <td>{{$passport->arrival}}</td>
+                    <td>{{$passport->visa_type}}</td>
+                    <td>{{$passport->passport_image}}</td>
+                    <td>{{$passport->photograph}}</td>
+                    <td>{{$passport->job}}</td>
                 </tr>
-                <tr>
-                    <td>1,002</td>
-                    <td>تثري</td>
-                    <td>مبهة</td>
-                    <td>تصميم</td>
-                    <td>تنسيق</td>
-                </tr>
-                <tr>
-                    <td>1,003</td>
-                    <td>عشوائية</td>
-                    <td>غنية</td>
-                    <td>قيمة</td>
-                    <td>مفيدة</td>
-                </tr>
-                <tr>
-                    <td>1,003</td>
-                    <td>معلومات</td>
-                    <td>تثري</td>
-                    <td>توضيحية</td>
-                    <td>عشوائية</td>
-                </tr>
-                <tr>
-                    <td>1,004</td>
-                    <td>الجدول</td>
-                    <td>بيانات</td>
-                    <td>تنسيق</td>
-                    <td>قيمة</td>
-                </tr>
-                <tr>
-                    <td>1,005</td>
-                    <td>قيمة</td>
-                    <td>مبهة</td>
-                    <td>الجدول</td>
-                    <td>تثري</td>
-                </tr>
-                <tr>
-                    <td>1,006</td>
-                    <td>قيمة</td>
-                    <td>توضيحية</td>
-                    <td>غنية</td>
-                    <td>عشوائية</td>
-                </tr>
-                <tr>
-                    <td>1,007</td>
-                    <td>تثري</td>
-                    <td>مفيدة</td>
-                    <td>معلومات</td>
-                    <td>مبهة</td>
-                </tr>
-                <tr>
-                    <td>1,008</td>
-                    <td>بيانات</td>
-                    <td>عشوائية</td>
-                    <td>تثري</td>
-                    <td>الجدول</td>
-                </tr>
-                <tr>
-                    <td>1,009</td>
-                    <td>تثري</td>
-                    <td>مبهة</td>
-                    <td>تصميم</td>
-                    <td>تنسيق</td>
-                </tr>
-                <tr>
-                    <td>1,010</td>
-                    <td>عشوائية</td>
-                    <td>غنية</td>
-                    <td>قيمة</td>
-                    <td>مفيدة</td>
-                </tr>
-                <tr>
-                    <td>1,011</td>
-                    <td>معلومات</td>
-                    <td>تثري</td>
-                    <td>توضيحية</td>
-                    <td>عشوائية</td>
-                </tr>
-                <tr>
-                    <td>1,012</td>
-                    <td>الجدول</td>
-                    <td>تثري</td>
-                    <td>تنسيق</td>
-                    <td>قيمة</td>
-                </tr>
-                <tr>
-                    <td>1,013</td>
-                    <td>قيمة</td>
-                    <td>مبهة</td>
-                    <td>الجدول</td>
-                    <td>تصميم</td>
-                </tr>
-                <tr>
-                    <td>1,014</td>
-                    <td>قيمة</td>
-                    <td>توضيحية</td>
-                    <td>غنية</td>
-                    <td>عشوائية</td>
-                </tr>
-                <tr>
-                    <td>1,015</td>
-                    <td>بيانات</td>
-                    <td>مفيدة</td>
-                    <td>معلومات</td>
-                    <td>الجدول</td>
-                </tr>
+                @endforeach
+
             </tbody>
         </table>
     </div>

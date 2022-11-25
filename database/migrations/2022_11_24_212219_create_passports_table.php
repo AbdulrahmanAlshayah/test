@@ -25,6 +25,8 @@ return new class extends Migration
             $table->string('passport_image');
             $table->string('photograph');
             $table->string('job');
+            $table->bigInteger('user_id')->unsigned();
+            $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }

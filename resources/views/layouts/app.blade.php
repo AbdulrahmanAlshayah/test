@@ -45,13 +45,13 @@
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">
                                 <span data-feather="home"></span>
-                                لوحة القيادة
+                                المسجلين
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <span data-feather="file"></span>
-                                الطلبات
+                                المدعوين
                             </a>
                         </li>
                         <li class="nav-item">
@@ -87,7 +87,7 @@
                             <span data-feather="plus-circle"></span>
                         </a>
                     </h6>
-                    <ul class="nav flex-column mb-2">
+                    {{-- <ul class="nav flex-column mb-2">
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <span data-feather="file-text"></span>
@@ -112,7 +112,7 @@
                                 مبيعات نهاية العام
                             </a>
                         </li>
-                    </ul>
+                    </ul> --}}
                 </div>
             </nav>
 
